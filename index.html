@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="index.js"></script>
+</head>
+<body onload="startUp()">
+    .
+    <div id="route-div">
+        <select name="start" id="start">
+            <!-- Filled by JS -->
+        </select>
+        <p>-></p>
+        <select name="end" id="end">
+            <!-- Filled by JS -->
+        </select>
+
+        <button onclick="getRoute()">FIND DA WAY</button>
+
+        <div id="route">
+            <!-- Filled by JS -->
+        </div>
+    </div>  
+
+    <template id="line-template">
+        <div class="line">
+            <p class="lineName"></p>
+            <ol class="lineStop">
+            </ol>
+        </div>
+    </template>
+</body>
+</html>

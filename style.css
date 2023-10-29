@@ -1,0 +1,49 @@
+body {
+    background-color: #666;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#route-div{
+    margin-top: 20rem ;
+}
+
+li, p {
+    color: #f1f1f1;
+}
+
+p {
+display: inline;
+}
+
+select {
+min-width: 10rem;
+}
+
+
+.line{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 2rem;
+    border-radius: 10px;
+}
+
+
+.line > *{
+    margin: 0
+}
+.line > ol {
+    list-style: outside;
+}
+
+.line > ol > li, .line p {
+    color: white;
+}
+
+.line > ol > li {
+    margin: 0.5rem;
+}
