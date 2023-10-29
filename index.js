@@ -1,6 +1,6 @@
 // GLOBAL VARIABLES
 let allStops= null;
-const URL="http://localhost:8080/"
+const URL="http://66.11.123.158:8080/" //Hosted URL
 
 // HTML REFRENCES
 let startSelect = null;
