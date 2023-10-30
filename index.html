@@ -1,36 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet" />
+    <!-- CDNJS -->
+    <link
+      rel="stylesheet"href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css"
+    />
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css" />
     <script src="index.js"></script>
-</head>
-<body onload="startUp()">
-    .
+  </head>
+  <body onload="startUp()">
+    <header>
+      <i class="fa-solid fa-route"></i>
+      <h1>Skills Bus Router</h1>
+    </header>
     <div id="route-div">
-        <select name="start" id="start">
-            <!-- Filled by JS -->
+      <div class="inputs">
+        <select name="start" id="start" onclick="disableButtonIfSame()">
+          <!-- Filled by JS -->
         </select>
-        <p>-></p>
-        <select name="end" id="end">
-            <!-- Filled by JS -->
+        <i class="fa-solid fa-arrow-right"></i>
+        <select name="end" id="end" onclick="disableButtonIfSame()">
+          <!-- Filled by JS -->
         </select>
+        <button onclick="getRoute()" id="submit-btn">Find route</button>
+      </div>
 
-        <button onclick="getRoute()">Find route</button>
-
-        <div id="route">
-            <!-- Filled by JS -->
-        </div>
-    </div>  
+      <div id="route">
+        <!-- Filled by JS -->
+      </div>
+    </div>
 
     <template id="line-template">
-        <div class="line">
-            <p class="lineName"></p>
-            <ol class="lineStop">
-            </ol>
+      <div class="line">
+        <div>
+          <i class="lineIcon"></i>
+          <p class="lineName"></p>
         </div>
+        <ol class="lineStop"></ol>
+      </div>
     </template>
-</body>
+  </body>
 </html>
