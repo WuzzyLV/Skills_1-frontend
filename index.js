@@ -25,6 +25,9 @@ function startUp() {
     });
 
     disableButtonIfSame();
+
+    //Set href of raw-data link to the used URL
+    document.getElementById("raw-data").href = `${URL}raw`;
 }
 
 function disableButtonIfSame() {
