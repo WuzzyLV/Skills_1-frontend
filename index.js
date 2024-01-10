@@ -1,6 +1,6 @@
 // GLOBAL VARIABLES
 let allStops = null;
-const URL = "http://66.11.123.158:8080/"; //Hosted URL
+const URL = "https://skillsbackend.wuzzy.me/"; //Hosted URL
 
 // HTML REFRENCES
 let startSelect = null;
